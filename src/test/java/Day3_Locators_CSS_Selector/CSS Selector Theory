@@ -1,0 +1,45 @@
+
+CSS Selector
+------------
+CSS - Cascading Style Sheets
+-----------------------------
+
+we locate CSS attribute using following four combination
+
+tag id                      tag#id
+tag class                   tag.class
+tag attribute               tag[attribute="value"]
+tag class attribute         tag.class[attribute="value"]
+
+above also tag is optional
+
+
+ctrl+f = search bar in inspect mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

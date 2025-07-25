@@ -1,0 +1,50 @@
+
+Locators
+----------------------------------
+
+
+
+Types of Locators
+----------------------------------
+- We can identify various elements on the web page using Locators
+- Locators are addresses that identity web element uniquely within the page
+
+1) Basic Locators
+    -id
+    -name
+    -LinkText, PartialLinkTest
+    -Class name
+    -Tagname
+
+2) Customized Locators
+    i) CSS Selector
+        -Tag and ID
+        -Tag and Class
+        -Tag and attribute
+        -Tag, class and attribute
+
+    ii) XPath
+        -Absolute XPath
+        -Relative XPath
+
+
+
+
+findElement() ---- return Single WebElement
+findElements() ---- return Multiple WebElements
+
+Scenario 1: Locator matching with single web element
+findElement(loc) ---> single web element     |      return type is: WebElement
+findElements(loc) ---> single web element    |      return type is: List<WebElement>
+
+Scenario 2: Locator matching with multiple web elements
+findElement(loc) ---> single web element     |      return type is: WebElement
+findElements(loc) ---> multiple web elements    |      return type is: List<WebElement>
+
+Scenario 2: Locator is not matching with any element/s
+findElement(loc) ---> its through No Such Element Exception
+findElements(loc) ---> will not through any exception but Return 0
+
+
+
+
