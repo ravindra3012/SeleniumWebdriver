@@ -1,0 +1,159 @@
+
+XPath
+-----------------------------
+XPath is an address of the element
+
+DOM - Document Object Model
+
+
+2 types of XPath
+-----------------------------
+1) Absolute xpath ( full xpath)
+     from nopCommerce website of search button
+     EX:    /html[1]/body[1]/div[6]/div[1]/div[2]/div[2]/form[1]/input[1]
+
+2) Relative xpath ( partial xpath)
+     from nopCommerce website of search button
+     EX:    //input[@id='small-searchterms']
+
+
+
+     Which xpath will preferred ?
+     ----> relative xpath
+
+
+Difference between Absolute xpath and Relative xpath ?
+-------------------------------------------------
+1) Absolute xpath starts with /             ----> represents root node
+1) Relative xpath starts with //
+
+2) Absolute xpath do not use attribute
+2) Relative xpath works with attribute
+
+3) Absolute xpath traverse through each node till it finds element
+3) Relative xpath directly jump and find the element by using attribute
+
+
+
+* Relative xpath
+--------------------
+We can create Relative xpath by 2 type
+1) Automatically        by using ---> Devtools, SelectorsHub
+2) Manually (own xpath)
+
+syntax
+----------------
+1) //tagname[@attribute='value']
+2) //*[@attribute='value']
+
+
+XPath with single attribute
+//input[@id='small-searchterms']
+
+XPath with multiple attribute
+//input[@name=\"q\"][@placeholder=\"Search store\"]
+
+
+
+XPath with 'and'  'or' operators
+----------------------------------
+XPath with 'and' operator      - in 'and' operator both attribute should be correct
+[@name="q" and @placeholder="Search store"]
+
+XPath with 'or' operator       - in 'or' operator only one attribute need correct
+[@name="q" or @placeholder="Search store"]
+
+
+XPath with inner text - text()
+------------------------------
+//a[text()='Computers']
+//a[text()='Electronics']
+here a is anchor tag of website, text() is method
+
+<a href="/electronics">Electronics </a>
+here linkText = yes
+     inner text = yes
+
+<div>welcome</div>
+here linkText = yes
+     inner text = yes
+
+
+
+xpath with contains()
+-----------------------------
+syntax
+//tagname[contains(@attribute,"attribute partial value")]
+
+EX.    //input[contains(@placeholder,'Sea')]
+
+
+
+xpath with starts-with() method
+-----------------------------
+syntax
+//tagname[starts-with(@attribute,"attribute partial value")]
+
+EX.    //input[starts-with(@placeholder,'Sea')]
+
+
+Handling dynamic attributes
+----------------------------------------
+
+//*[@id='start' or @id='stop']
+//*[contains(@id,'st')]
+//*[starts-with(@id,'st')]
+
+
+name=xyz001     xyz002      xyz003      xyz004      xyz001      xyz002
+
+//*[contains(@name,'xyz')]
+//*[contains(@name,'00')]
+//*[starts-with(@name,'xyz')]
+
+name= 1xyz      2xyz        3xyz        4xyz        1xyz
+//*[contains(@name,'xyz')]
+we not use starts-with() method
+
+
+
+chained xpath
+------------------------------
+when you dont find any attribute or inner text then you use chained xpath
+attribute is not available then we use attribute of parent
+this is also relational and absolute xpath combination
+
+//div[@class='header-logo']/a/img
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
