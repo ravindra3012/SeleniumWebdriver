@@ -33,7 +33,7 @@ public class XPathDemo {
 //        boolean displayStatus=driver.findElement(By.xpath("//strong[.='Featured products']")).isDisplayed();
 //        System.out.println(displayStatus);
 
-//        String value=driver.findElement(By.xpath("//strong[.='Featured products']")).getText();
+//        String value=driver.findElement(By.xpath("//strong[.='Featured products']")).getText();              // here in [] brackets . dot represents the text() method
 //        System.out.println(value);
 
 

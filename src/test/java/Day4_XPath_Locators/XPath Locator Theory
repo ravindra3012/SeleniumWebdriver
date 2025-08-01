@@ -25,7 +25,7 @@ DOM - Document Object Model
 Difference between Absolute xpath and Relative xpath ?
 -------------------------------------------------
 1) Absolute xpath starts with /             ----> represents root node
-1) Relative xpath starts with //
+1) Relative xpath starts with //            ----> represents direct target element
 
 2) Absolute xpath do not use attribute
 2) Relative xpath works with attribute
@@ -119,7 +119,7 @@ we not use starts-with() method
 
 chained xpath
 ------------------------------
-when you dont find any attribute or inner text then you use chained xpath
+when you dont find any attribute or inner text then you use chained xpath.
 attribute is not available then we use attribute of parent
 this is also relational and absolute xpath combination
 

@@ -14,7 +14,7 @@ Types of Locators
     -name
     -LinkText, PartialLinkTest
     -Class name
-    -Tagname
+    -Tag name
 
 2) Customized Locators
     i) CSS Selector
