@@ -1,0 +1,85 @@
+
+WebDriver Waiting Methods
+------------------------------------------
+
+wait commands
+------------------------------------------
+
+Thread.sleep()
+
+1) implicit wait
+2) explicit wait/ fluent wait
+
+
+
+NoSuchElementException  -  Element is not present on the webpage(also Synchronization problem)
+ElementNotFoundException  -  Locators is incorrect
+
+
+sleep()
+-----------------------
+Advantage
+    1) easy to use
+DisAdvantages
+    1) if the time is not sufficient then you will get exception
+    2) it will wait for maximum time out, this will reduce the performance
+    3) multiple times
+
+
+implicit wait
+------------------------
+Syntax
+    driver.manage().timeouts().implicitWait(Duration.ofSeconds(10))
+
+Advantages
+    1) single time/ one statement
+    2) It will not wait till maximum time if the element is available
+    3) Application for all the elements
+    4) easy to use
+Disadvantages
+    1) If the time is not sufficient then you will get exception
+
+
+
+
+explicit wait
+----------------------
+
+1) Conditional based, it will work more effectively
+2) finding element is inclusive(for some conditions)
+3) it will wait for condition to be true, then consider the time
+4) we need to write multiple statement for multiple elements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
